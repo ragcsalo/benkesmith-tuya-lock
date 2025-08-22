@@ -21,9 +21,9 @@
 
 		<framework src="src/android/tuya-repos.gradle" custom="true" type="gradleReference" />
 
-	    <framework src="com.tuya.smart:tuyasmart-home-sdk:latest.release" />
-	    <framework src="com.tuya.smart:tuyasmart-ble-lib:latest.release" />
-	    <framework src="com.tuya.smart:tuyasmart-ble-lock:latest.release" />
+	    <framework src="com.tuya.smart:tuyasmart:3.36.5" />
+        <framework src="com.tuya.smart:tuyasmart-bluetooth:3.32.5" />
+        <framework src="com.tuya.smart:tuyasmart-lock-sdk:2.2.0" />
 		<source-file src="src/android/TuyaLock.java" target-dir="src/com/benkesmith/tuyalock" />
 	  </platform>
 
