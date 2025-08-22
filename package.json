@@ -1,0 +1,30 @@
+{
+  "name": "benkesmith-tuya-lock",
+  "version": "1.0.0",
+  "description": "A Cordova plugin that provides methods for controlling Tuya-compatible Bluetooth padlocks.",
+  "cordova": {
+    "id": "com.benkesmith.tuyalock",
+    "platforms": [
+      "ios"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ragcsalo/benkesmith-tuya-lock.git"
+  },
+  "keywords": [
+    "cordova",
+    "tuya",
+    "lock",
+    "padlock",
+    "plugin"
+  ],
+  "author": "Benke Smith <benke.smith@gmail.com>",
+  "license": "Apache-2.0",
+  "engines": [
+    {
+      "name": "cordova",
+      "version": ">=6.0.0"
+    }
+  ]
+}

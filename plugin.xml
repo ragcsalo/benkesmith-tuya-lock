@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin id="com.benkesmith.tuyalock" version="1.0.0" xmlns="http://apache.org/cordova/ns/plugins/1.0">
+    <name>TuyaLock</name>
+    <description>Native Tuya padlock plugin for Cordova</description>
+    <license>Apache 2.0</license>
+    <keywords>cordova, tuya, lock, padlock, plugin</keywords>
+
+    <js-module src="www/TuyaLock.js" name="TuyaLock">
+        <clobbers target="TuyaLock" />
+    </js-module>
+
+	  <platform name="android">
+		<config-file parent="/*" target="AndroidManifest.xml">
+		  <uses-permission android:name="android.permission.BLUETOOTH" />
+		  <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+		  <uses-permission android:name="android.permission.BLUETOOTH_SCAN" />
+		  <uses-permission android:name="android.permission.BLUETOOTH_CONNECT" />
+		  <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+		  <uses-feature android:name="android.hardware.bluetooth_le" android:required="true"/>
+		</config-file>
+	    <framework src="build-extras.gradle" type="gradleReference" />
+		<source-file src="src/android/TuyaLock.java" target-dir="src/com/benkesmith/tuyalock" />
+	  </platform>
+
+    <platform name="ios">
+		<config-file target="config.xml" parent="/*">
+			<feature name="TuyaLock">
+				<param name="ios-package" value="TuyaLock" />
+			</feature>
+		</config-file>
+		<source-file src="src/ios/TuyaLock.h" />
+		<source-file src="src/ios/TuyaLock.m" />
+    </platform>
+</plugin>
