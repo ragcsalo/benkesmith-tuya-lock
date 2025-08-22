@@ -18,6 +18,7 @@ You can install this plugin from a local path or directly from the GitHub reposi
 
 ```bash
 cordova plugin add https://github.com/ragcsalo/benkesmith-tuya-lock.git
+```
 
 ## Usage
 
@@ -72,6 +73,7 @@ const logs = await TuyaLock.getUnlockLogs({
   page: 0,
   size: 20
 });
+```
 
 ## Notes
 
