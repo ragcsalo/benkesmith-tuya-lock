@@ -18,7 +18,12 @@
 		  <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
 		  <uses-feature android:name="android.hardware.bluetooth_le" android:required="true"/>
 		</config-file>
-	    <framework src="build-extras.gradle" type="gradleReference" />
+
+		<framework src="src/android/tuya-repos.gradle" custom="true" type="gradleReference" />
+
+	    <framework src="com.tuya.smart:tuyasmart-home-sdk:latest.release" />
+	    <framework src="com.tuya.smart:tuyasmart-ble-lib:latest.release" />
+	    <framework src="com.tuya.smart:tuyasmart-ble-lock:latest.release" />
 		<source-file src="src/android/TuyaLock.java" target-dir="src/com/benkesmith/tuyalock" />
 	  </platform>
 
